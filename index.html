@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Probando Vue 3</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <style>
+      .app {
+        padding: 10px;
+      }
+      .box {
+        background-color: purple;
+        margin: 10px;
+        width: 200px;
+        height: 200px;
+      }
+      .textarea {
+        margin: 10px auto;
+      }
+      .textarea :only-child {
+        width: 65%;
+      }
+      input {
+        margin: 10px;
+        display: block;
+      }
+      .textState {
+        border: solid black 1px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <hr />
+    <div id="app1" class="app">
+      <login-form />
+    </div>
+    <hr />
+
+    <div id="app2" class="app">
+      <toggle-show-box />
+    </div>
+    <hr />
+
+    <div id="app3" class="app">
+      <modify-text-state />
+    </div>
+    <hr />
+  </body>
+  <script src="./scripts.js"></script>
+</html>
